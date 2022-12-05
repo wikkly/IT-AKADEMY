@@ -1,0 +1,82 @@
+:root {
+  --background: #fce8f7;
+}
+/* variable couleur */
+
+body {
+  background-color: var(--background);
+}
+
+#form__titleregister {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Bebas Neue", cursive;
+}
+
+#register__form {
+  border: 2px solid rgb(252, 212, 239);
+  width: 50%;
+  margin: auto;
+  margin: 25px auto 0 auto;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Bebas Neue", cursive;
+  border-radius: 10px;
+  background-color: #fff7fd;
+}
+
+.allInputMarginBottom {
+  margin-bottom: 10px;
+}
+
+#register__form button {
+  border: 1px solid rgb(252, 212, 239);
+  background-color: rgb(252, 212, 239);
+  border-radius: 10px;
+  margin: auto;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 1;
+}
+
+#register__form button:hover {
+  background-color: #fc95e1;
+  transition: 1;
+}
+
+#asterisk {
+  color: red;
+}
+
+#user {
+  margin: auto;
+  color: #e6d1de;
+  transition: 2s;
+}
+
+#div__2D {
+  display: none;
+  width: 200px;
+  height: 200px;
+  background-color: #fc95e1;
+  transition: 2s;
+}
+
+#div__2D:hover {
+  transform: translateX(50px);
+}
+
+#moovemysubmit {
+  margin: auto;
+  transition: 2s;
+}
+#moovemysubmit:hover {
+  transform: translate(50px);
+}
+
+@media only screen and (max-width: 600px) {
+  #register__form {
+    width: 80%;
+  }
+}

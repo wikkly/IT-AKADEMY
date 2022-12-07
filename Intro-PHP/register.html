@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" /
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/566e8e5913.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" type="image/x-icon" href="assets/pngegg.png" />
+    <title>Information de connexion</title>
+  </head>
+  <body marginwidth="50" marginheight="100" topmargin="100" leftmargin="50">
+    <h1 id="form__titleregister">Formulaire d'inscription</h1>
+    <form action="traitement.php" method="post" id="register__form">
+      <i id="user" class="fa-regular fa-user fa-5x"></i>
+      <label for="surname"> Nom </label>
+      <input
+        class="allInputMarginBottom"
+        type="text"
+        placeholder="Nom"
+        id="surname"
+        name="surname"
+        required
+      />
+      <label for="name"> Prénom </label>
+      <input
+        class="allInputMarginBottom"
+        type="text"
+        placeholder="Prénom"
+        id="name"
+        name="name"
+        required
+      />
+      <label for="date"> Date de naissance </label>
+      <input
+        class="allInputMarginBottom"
+        type="date"
+        placeholder="Date de naissance"
+        id="date"
+        name="date"
+        required
+      />
+      <div>
+        <input
+          class="allInputMarginBottom"
+          type="radio"
+          id="Choice1"
+          name="genre"
+          value="Femme"
+          required
+        />
+
+        <label for="Choice1"> Femme </label>
+        <input
+          class="allInputMarginBottom"
+          type="radio"
+          id="Choice2"
+          name="genre"
+          value="Homme"
+          required
+        />
+        <label for="Choice2"> Homme </label>
+        <input
+          class="allInputMarginBottom"
+          type="radio"
+          id="Choice3"
+          name="genre"
+          value="Autre"
+          required
+        />
+        <label for="Choice3"> Autre </label>
+      </div>
+      <select class="allInputMarginBottom" name="region" id="region" required>
+        <option value="">--Merci de choisir une option--</option>
+        <option value="Isere">Isère</option>
+        <option value="Lyon">Lyon</option>
+        <option value="Ardeche">Ardeche</option>
+      </select>
+
+      <label for="email"> E-mail </label>
+      <input
+        class="allInputMarginBottom"
+        type="email"
+        placeholder="E-mail"
+        id="email"
+        name="email"
+        required
+      />
+
+      <fieldset class="allInputMarginBottom">
+        <legend>
+          J'ai lu et j'accepte les CGU <span id="asterisk"> * </span>
+        </legend>
+        <input
+          class="allInputMarginBottom"
+          type="checkbox"
+          id="yes"
+          name="Oui"
+        />
+        <label for="yes">Oui</label>
+        <input
+          class="allInputMarginBottom"
+          type="checkbox"
+          id="No"
+          name="Non"
+        />
+        <label for="yes">Non</label>
+      </fieldset>
+
+      <button class="button" type="submit">Je m'inscris !</button>
+    </form>
+
+    <div id="div__2D"></div>
+  </body>
+</html>

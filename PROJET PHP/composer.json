@@ -1,0 +1,13 @@
+{
+    "name": "itakademy/videotheque",
+    "description": "Videothèque project",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/controllers",
+            "Model\\": "app/models"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {}
+}

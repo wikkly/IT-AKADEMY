@@ -5,7 +5,9 @@
     "autoload": {
         "psr-4": {
             "App\\": "app/controllers",
-            "Model\\": "app/models"
+            "Model\\": "app/models",
+            "Img\\": "app/assets",
+            "Interfaces\\": "app/interfaces" 
         }
     },
     "minimum-stability": "dev",

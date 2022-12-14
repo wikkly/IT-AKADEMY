@@ -7,7 +7,7 @@ class Film extends Media
 {
     //protected $film;
 
-    public function list()
+   /* public function list()
     {
        // echo "Méthode : ". __CLASS__;
         $model = new ModelFilm();
@@ -19,8 +19,10 @@ class Film extends Media
     public function detail($id)
     {
         $model = new ModelFilm();
-        $data = $model->getDatas($id); 
-    }
+        $data = $model->getDataByID($id);
+
+        return $data;
+    } */
 }
 
 

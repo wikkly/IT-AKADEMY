@@ -11,6 +11,11 @@ class ComposerStaticInit67560590ac61bef00a454a505471880c
         array (
             'Model\\' => 6,
         ),
+        'I' => 
+        array (
+            'Interfaces\\' => 11,
+            'Img\\' => 4,
+        ),
         'A' => 
         array (
             'App\\' => 4,
@@ -21,6 +26,14 @@ class ComposerStaticInit67560590ac61bef00a454a505471880c
         'Model\\' => 
         array (
             0 => __DIR__ . '/../..' . '/app/models',
+        ),
+        'Interfaces\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/app/interfaces',
+        ),
+        'Img\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/app/assets',
         ),
         'App\\' => 
         array (

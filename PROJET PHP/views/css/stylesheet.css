@@ -1,0 +1,36 @@
+:root {
+  --background: rgb(4, 3, 30);
+}
+
+body {
+  background-color: var(--background);
+}
+
+.affichagefilm {
+  border: 1px solid rgba(7, 16, 64, 0.794);
+  width: 50%;
+  margin: auto;
+  margin: 50px auto 0 auto;
+  padding: 25px;
+  border-radius: 5px;
+  background-color: #62746b4f;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Bebas Neue", cursive;
+  color: rgba(108, 105, 123, 0.735);
+  font-size: xxx-large;
+}
+
+p {
+  font-family: "Bebas Neue", cursive;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: x-large;
+}
+
+.img {
+  width: 350px;
+  height: 500px;
+}

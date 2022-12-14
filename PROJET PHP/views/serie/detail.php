@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Your movie</title>
+    <title>Your serie</title>
     <link rel="stylesheet" type="text/css" href="views/css/stylesheet.css" />
     <script src="script.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />

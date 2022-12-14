@@ -1,12 +1,12 @@
 <?php
+
 namespace App;
+use Model\Serie as ModelSerie;
 
-use Interfaces\PageInterfaces;
-class Media implements PageInterfaces
+class Serie extends Media
 {
-
     protected $DataCount;
-    protected $defaultModel = "Model\\Film";
+    protected $defaultModel = "Model\\Serie";
     public function list() {
         $model = new $this->defaultModel();
         $datas = $model->getDatas();
@@ -25,4 +25,4 @@ class Media implements PageInterfaces
         return ($this->DataCount);
     }
 
-}
+?>

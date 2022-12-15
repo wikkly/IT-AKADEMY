@@ -6,12 +6,15 @@ class Media
 {
     public function getDatas()
     {
+       
         return static::$datas;
-    }
+    
+   }
 
     public function getDataByID($index)
     {
-        return static::$datas[$index];
+            return static::$datas[$index];
     }
+
 }
 ?>

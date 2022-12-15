@@ -23,6 +23,7 @@
         <p>Genre :
             <?= $datas['genre'] ?>
         </p>
+       <?= "hello" ?>
     </div>
 </body>
 

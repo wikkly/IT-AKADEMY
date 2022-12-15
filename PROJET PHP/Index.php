@@ -6,6 +6,7 @@ $_page   = 'film';
 $_action = 'list';
 $_id     = 0;
 
+//vérifie si page est initié
 if (isset($_GET['page']) && !empty(trim($_GET['page'])))
 {
     $get_page = trim($_GET['page']);
@@ -30,6 +31,8 @@ if (isset($_GET['page']) && !empty(trim($_GET['page'])))
     }
 }
 
+//vérifie si action est initié
+
 if (isset($_GET['action']) && !empty(trim($_GET['action'])))
 {
     $get_action = trim($_GET['action']);
@@ -38,25 +41,40 @@ if (isset($_GET['action']) && !empty(trim($_GET['action'])))
     $_action = (in_array($get_action, $tab_action)) ? $get_action : 'list';
 }
 
-
-if (isset($_GET['id']) && !empty(trim($_GET['id'])) && $_GET['id'] <= $page->getDataCount()){
-    $_id = trim($_GET['id']);
+//vérifie si id est initié
+if (isset($_GET['id']) && !empty(trim($_GET['id']))) // && $_GET['id'] <= $page->getDataCount())
+{
+  $_id = trim($_GET['id']);
 }
-//echo $_page . ' ' . $_action;
-
+//asigne la valeur de $_page passé en paramètre pour pouvoir allez chercher directement dans les 
 $controller = "App\\" . ucfirst(strtolower($_page));
 $page = new $controller;
 
 if( $_action == 'detail')
 {
-    $datas = $page->$_action($_id);
-}else{
+    if ($page->getDataCount() >= $_id)
+    {
+        $datas = $page->$_action($_id);
+        $valid = true;
+    }
+    else
+    {
+        echo "Film introuvable";
+        $valid = false;
+    }
+}
+else
+{
+    $valid = true;
     $datas = $page->$_action();
 }
-//var_dump($datas);
-//$datas = $page->$_action();
-//echo $controller;
 
-include_once 'views/' . $_page . '/' . $_action . '.php';
+//$datas = $page->$_action();
+
+if ($valid)
+{
+    include_once 'views/' . $_page . '/' . $_action . '.php'; 
+}
+
 
 ?>

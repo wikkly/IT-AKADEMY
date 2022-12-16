@@ -10,20 +10,19 @@
 </head>
 
 <body>
-    <div class="affichagefilm">
-        <img class="img" src="app/assets/<?= $datas['img'];?>">
-        <h1><?= $datas['titre']; ?>
+    <div class="affichagemedia">
+        <img class="img" src="app/assets/<?= $datas['img']?>">
+        <h1><?= $datas['titre']?>
         </h1>
-        <p>Année :
+        <p>
             <?= $datas['annee'] ?>
         </p>
-        <p>Synopsis : <br>
+        <p><br>
             <?= $datas['synopsis'] ?>
         </p>
-        <p>Genre :
+        <p>
             <?= $datas['genre'] ?>
         </p>
-       <?= "hello" ?>
     </div>
 </body>
 

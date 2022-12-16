@@ -1,31 +1,61 @@
 :root {
-  --background: hsl(0, 0%, 100%);
+  --background:#00171c;
 }
 
 body {
   background-color: var(--background);
 }
 
-.affichagefilm {
-  border: 1px solid rgba(7, 16, 64, 0.794);
+.homepage{
+  background-color: #953a28;
+}
+
+.affichagemedia {
+  border: 1px solid #ecab3f;
   width: 50%;
   margin: auto;
   margin: 50px auto 0 auto;
   padding: 25px;
   border-radius: 5px;
-  background-color: #62746b4f;
+  background-color: #0e1f29;
   text-align: center;
+  
 }
+
+li{
+  display: inline;
+  font-family: "Bebas Neue", cursive;
+  color: #953a28;
+  font-size: xx-large;
+ 
+}
+
+ul{
+  text-align: center;
+  background-color:#422924;
+}
+
+.afffilmhome{
+margin : 0 auto; 
+text-align: center;
+}
+
+.afffilmhome img{
+  width: 350px;
+  height: 500px;
+  align-items: center;
+}
+
 
 h1 {
   font-family: "Bebas Neue", cursive;
-  color: rgba(108, 105, 123, 0.735);
+  color: #ba852a;
   font-size: xxx-large;
 }
 
 p {
   font-family: "Bebas Neue", cursive;
-  color: rgb(255, 255, 255);
+  color: #9f521a;
   text-align: center;
   font-size: x-large;
 }
@@ -33,4 +63,44 @@ p {
 .img {
   width: 350px;
   height: 500px;
+  display: absolute;
 }
+
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #050801;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+a{
+    position: relative;
+    display: inline-block;
+    padding: 25px 30px;
+    margin: 50px 0;
+    color: #1c1000;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+    margin-right: 50px;
+}
+a:hover{
+    background: #ba852a;
+    color: #0a0f33;
+    box-shadow: 0 0 5px #ba852a,
+                0 0 25px #ba852a,
+                0 0 50px #ba852a,
+                0 0 200px #ba852a;
+     -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+} 

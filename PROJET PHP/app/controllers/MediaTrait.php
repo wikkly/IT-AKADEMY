@@ -3,12 +3,12 @@
 namespace App;
 
 use Model\film;
-use Model\Realisateur;
 use Model\Serie;
+use Model\Realisateur;
 
 trait MediaTrait
 {
-    function getFilms() 
+    function getFilm() 
     {
         $model = new Film();
         return $model->getDatas();

@@ -4,7 +4,7 @@ namespace Model;
 
 class Serie extends Media
 {
-    protected static $datas = [
+    public static $datas = [
         [
             'img' => 'lecameleon.jpeg',
             'titre' => 'Le camaleon',

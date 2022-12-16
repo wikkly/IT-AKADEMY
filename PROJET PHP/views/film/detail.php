@@ -10,8 +10,8 @@
 </head>
 
 <body>
-    <div class="affichagefilm">
-        <img class="img" src="app/assets/<?= $datas['img'];?>">
+    <div class="affichagemedia">
+        <img class="img" src="app/assets/<?=$datas['img'];?>">
         <h1><?= $datas['titre']; ?>
         </h1>
         <p>Année :

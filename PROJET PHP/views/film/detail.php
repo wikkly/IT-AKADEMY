@@ -11,18 +11,22 @@
 
 <body>
     <div class="affichagemedia">
+
         <img class="img" src="app/assets/<?=$datas['img'];?>">
         <h1><?= $datas['titre']; ?>
-        </h1>
-        <p>Année :
-            <?= $datas['annee'] ?>
-        </p>
-        <p>Synopsis : <br>
-            <?= $datas['synopsis'] ?>
-        </p>
-        <p>Genre :
+        </h1> <br>
+        <p> <a id="namerealisator" href="?page=realisateur&action=detail&id=" . <?= $datas['realisateur']?>> <?= $datas['fullname']?> </a></p>
+        <p> 
             <?= $datas['genre'] ?>
-        </p>
+        </p>    
+        <p>
+                <?= $datas['annee'] ?>
+            </p>
+                 <p> 
+                    <br>
+                     <?= $datas['synopsis'] ?>
+                </p>
+        
     </div>
 </body>
 

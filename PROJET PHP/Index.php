@@ -1,4 +1,5 @@
 <?php
+ini_set('error_reporting', E_ALL);
 
 require_once 'vendor/autoload.php';
 
@@ -51,14 +52,14 @@ $page = new $controller;
 
 if( $_action == 'detail')
 {
-    if ($page->getDataCount() > $_id && $_id > 0)
+    if ($page->getDataCount() > $_id && $_id >= 0)
     {
         $datas = $page->$_action($_id);
         $valid = true;
     }
     else
     {
-        echo "Film introuvable";
+        echo "Film introuvable";        
         $valid = false;
     }
 }

@@ -3,7 +3,7 @@
         'name' => 'itakademy/videotheque',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '6a3db1267d5d1e790c38a6a72cf3aa44f51c21c3',
+        'reference' => 'b4186132491741c931b7429661aacc79b76baa8e',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'itakademy/videotheque' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '6a3db1267d5d1e790c38a6a72cf3aa44f51c21c3',
+            'reference' => 'b4186132491741c931b7429661aacc79b76baa8e',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

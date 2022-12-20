@@ -7,7 +7,7 @@ class Realisateur extends Media
     public static $datas = [
         [
             'id' => 0,
-            'img' => "Scorsese.jpeg",
+            'img' => "Scorsece.jpeg",
             'fullname' => "Martin Charles Scorsese",
             'work' => "Acteur, Réalisateur, Producteur délégué",
             'nationality' => "Américain",

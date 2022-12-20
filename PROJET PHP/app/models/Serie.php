@@ -6,6 +6,7 @@ class Serie extends Media
 {
     public static $datas = [
         [
+            'id' => 0,
             'img' => 'lecameleon.jpeg',
             'titre' => 'Le camaleon',
             'annee' => 1992,
@@ -13,6 +14,7 @@ class Serie extends Media
             'genre' => 'psycologie/action'
         ],
         [
+            'id' => 1,
             'img' => 'xfiles.jpeg',
             'titre' => 'X Files',
             'annee' => 1998,
@@ -20,6 +22,7 @@ class Serie extends Media
             'genre' => 'enquetes'
         ],
         [
+            'id' => 2,
             'img' => 'thewalkingdead.jpeg',
             'titre' => 'the walking dead',
             'annee' => 2021,
@@ -27,6 +30,7 @@ class Serie extends Media
             'genre' => 'action/zombie'
         ],
         [
+            'id' => 3,
             'img' => 'blacklist.jpeg',
             'titre' => 'BlackList',
             'annee' => 2021,
@@ -34,6 +38,7 @@ class Serie extends Media
             'genre' => 'enquetes'
         ],
         [
+            'id' => 4,
             'img' => 'lovedeath.jpeg',
             'titre' => 'love death and robots',
             'annee' => 2021,
@@ -41,6 +46,7 @@ class Serie extends Media
             'genre' => 'indescriptible'
         ],
         [
+            'id' => 5,
             'img' => 'bigbang.jpeg',
             'titre' => 'BigBang Theorie',
             'annee' => 2018,
